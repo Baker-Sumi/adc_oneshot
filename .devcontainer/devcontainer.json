@@ -1,0 +1,19 @@
+{
+    "name": "adc_tutrial_oneshot",
+    "dockerComposeFile": "../.docker/compose.yaml",
+    "service": "adc_tutrial_oneshot",
+    "workspaceFolder": "/adc_tutrial_oneshot",
+    "remoteEnv": {
+        "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "probe-rs.probe-rs-debugger",
+                "tamasfe.even-better-toml",
+                "fill-labs.dependi"
+            ]
+        }
+    }
+}

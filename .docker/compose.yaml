@@ -1,0 +1,12 @@
+services:
+  adc_tutrial_oneshot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "baker-link-env"
+    container_name: "adc_tutrial_oneshot-container"
+    volumes:
+      - "../:/adc_tutrial_oneshot"
+    working_dir: /adc_tutrial_oneshot
+    command: /bin/sh
+    tty: true
